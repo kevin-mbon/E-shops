@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Shop.api.Data;
+using Shop.api.Repositories;
+using Shop.api.Repositories.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<EshopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("EshopConnection"))
     );
+builder.Services.AddScoped<IProductRepository, ProductRepository >();
 
 var app = builder.Build();
 

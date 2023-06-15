@@ -1,13 +1,22 @@
-﻿using Shop.api.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Shop.api.Data;
+using Shop.api.Entities;
 using Shop.api.Repositories.Contracts;
 
 namespace Shop.api.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        public Task<IEnumerable<ProductCategory>> GetCategpries()
+        private readonly EshopDbContext eshopDbContext;
+
+        public ProductRepository(EshopDbContext eshopDbContext)
         {
-            throw new NotImplementedException();
+            this.eshopDbContext = eshopDbContext;
+        }
+        public async Task<IEnumerable<ProductCategory>> GetCategories()
+        {
+           var categories = await this.eshopDbContext.ProductCategories.ToListAsync();
+            return categories;
         }
 
         public Task<IEnumerable<Product>> GetCategpries(int id)
@@ -15,14 +24,17 @@ namespace Shop.api.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetItem()
+        public Task<IEnumerable<Product>> GetItems()
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetItem(int id)
+        public async Task<IEnumerable<Product>> GetItems(int id)
         {
-            throw new NotImplementedException();
+            var products = await this.eshopDbContext.Products.ToListAsync();
+            return products;
         }
+
+       
     }
 }
