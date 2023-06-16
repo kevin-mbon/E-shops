@@ -19,17 +19,17 @@ namespace Shop.api.Repositories
             return categories;
         }
 
-        public Task<IEnumerable<Product>> GetCategpries(int id)
+        public Task<IEnumerable<Product>> GetCategories(int id)
+        {
+            throw new NotImplementedException(); 
+        }
+
+        public Task<IEnumerable<Product>> GetItem(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetItems()
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<IEnumerable<Product>> GetItems(int id)
+        public async Task<IEnumerable<Product>> GetItems()
         {
             var products = await this.eshopDbContext.Products.ToListAsync();
             return products;
