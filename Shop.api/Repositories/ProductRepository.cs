@@ -19,12 +19,12 @@ namespace Shop.api.Repositories
             return categories;
         }
 
-        public Task<IEnumerable<Product>> GetCategories(int id)
+        public Task<Product> GetCategory(int id)
         {
             throw new NotImplementedException(); 
         }
 
-        public Task<IEnumerable<Product>> GetItem(int id)
+        public Task<Product> GetItem(int id)
         {
             throw new NotImplementedException();
         }

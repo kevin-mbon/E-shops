@@ -18,7 +18,7 @@ namespace Shop.api.DtoExtensions
                         ImgUrl = product.ImgUrl,
                         Price = product.Price,
                         Qty = product.Qty,
-                        CategoryId = product.CategoryId,
+                        CategoryId = product.CategoryId
                     }).ToList();
                     
 

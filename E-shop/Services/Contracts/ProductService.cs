@@ -1,4 +1,5 @@
 ﻿using Eshop.Models.Dtos;
+using System.Net.Http.Json;
 
 namespace Eshop.Services.Contracts
 {
@@ -11,9 +12,20 @@ namespace Eshop.Services.Contracts
             this.httpClient = httpClient;
         }
 
-        public Task<IEnumerable<ProductDto>> GetItems()
+        public async Task<IEnumerable<ProductDto>> GetItems()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var products = await this.httpClient.GetFromJsonAsync<IEnumerable<ProductDto>>("api/products");
+
+                return products;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
