@@ -36,8 +36,8 @@ namespace Shop.api.Controllers
             }
             catch (Exception)
             {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error uccured in retreiving data from database");
+               
+             return StatusCode(StatusCodes.Status500InternalServerError, "Error uccured in retreiving data from database");
             }
 
         }

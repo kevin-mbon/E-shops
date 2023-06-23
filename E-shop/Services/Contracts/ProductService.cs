@@ -17,7 +17,6 @@ namespace Eshop.Services.Contracts
             try
             {
                 var products = await this.httpClient.GetFromJsonAsync<IEnumerable<ProductDto>>("api/products");
-
                 return products;
 
             }

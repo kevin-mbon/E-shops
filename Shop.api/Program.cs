@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 using Shop.api.Data;
 using Shop.api.Repositories;
 using Shop.api.Repositories.Contracts;
@@ -23,7 +24,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors(policy => policy.WithOrigins("http://localhost:7025", "https://localhost:7025").AllowAnyMethod()
+.WithHeaders(HeaderNames.ContentType)
+);
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
