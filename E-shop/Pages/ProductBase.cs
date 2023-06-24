@@ -1,6 +1,7 @@
 ﻿using Eshop.Models.Dtos;
 using Eshop.Services.Contracts;
 using Microsoft.AspNetCore.Components;
+using System.Linq;
 
 namespace Eshop.Pages
 {
@@ -13,6 +14,17 @@ namespace Eshop.Pages
         protected override async Task OnInitializedAsync()
         {
             Products = await ProductService.GetItems();
+        }
+        protected IOrderedEnumerable<IGrouping<int,ProductDto>> GetGroupedProductsByCategory() { 
+            return from product in Products
+                   group product by product.CategoryId into prodByCatGroup
+                   orderby prodByCatGroup.Key
+                   select prodByCatGroup;
+        }
+        protected string GetCategoryName()
+        {
+
+
         }
     }
 }

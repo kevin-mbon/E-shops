@@ -25,7 +25,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Beauty/Beauty1.png",
                 Price = 100,
                 Qty = 100,
-                CategoryId = 1
+                CategoryId = 1,
+                CategoryName = "Cosmetics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -36,8 +37,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Beauty/Beauty2.png",
                 Price = 50,
                 Qty = 45,
-                CategoryId = 1
-
+                CategoryId = 1,
+                CategoryName = "Cosmetics"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -47,7 +48,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Beauty/Beauty3.png",
                 Price = 20,
                 Qty = 30,
-                CategoryId = 1
+                CategoryId = 1,
+                CategoryName = "Cosmetics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -58,7 +60,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Beauty/Beauty4.png",
                 Price = 50,
                 Qty = 60,
-                CategoryId = 1
+                CategoryId = 1,
+                CategoryName = "Cosmetics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -69,7 +72,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Beauty/Beauty5.png",
                 Price = 30,
                 Qty = 85,
-                CategoryId = 1
+                CategoryId = 1,
+                CategoryName = "Cosmetics"
 
             });
             //Electronics Category
@@ -81,7 +85,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/Electronics1.png",
                 Price = 100,
                 Qty = 120,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -92,7 +97,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/Electronics2.png",
                 Price = 40,
                 Qty = 200,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -103,7 +109,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/Electronics3.png",
                 Price = 40,
                 Qty = 300,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -114,7 +121,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/Electronic4.png",
                 Price = 600,
                 Qty = 20,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -125,7 +133,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/Electronic5.png",
                 Price = 500,
                 Qty = 15,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -136,7 +145,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Electronic/technology6.png",
                 Price = 100,
                 Qty = 60,
-                CategoryId = 3
+                CategoryId = 3,
+                CategoryName = "Electronics"
             });
             //Furniture Category
             modelBuilder.Entity<Product>().HasData(new Product
@@ -147,7 +157,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture1.png",
                 Price = 50,
                 Qty = 212,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
             });
 
             modelBuilder.Entity<Product>().HasData(new Product
@@ -158,7 +169,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture2.png",
                 Price = 50,
                 Qty = 112,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -168,7 +180,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture3.png",
                 Price = 70,
                 Qty = 90,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -178,7 +191,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture4.png",
                 Price = 120,
                 Qty = 95,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -188,7 +202,9 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture6.png",
                 Price = 15,
                 Qty = 100,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
+
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -198,7 +214,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Furniture/Furniture7.png",
                 Price = 20,
                 Qty = 73,
-                CategoryId = 2
+                CategoryId = 2,
+                CategoryName = "Furniture"
             });
             //Shoes Category
             modelBuilder.Entity<Product>().HasData(new Product
@@ -209,7 +226,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes1.png",
                 Price = 100,
                 Qty = 50,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -219,7 +237,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes2.png",
                 Price = 150,
                 Qty = 60,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -229,7 +248,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes3.png",
                 Price = 200,
                 Qty = 70,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -239,7 +259,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes4.png",
                 Price = 120,
                 Qty = 120,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -249,7 +270,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes5.png",
                 Price = 200,
                 Qty = 100,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
@@ -259,7 +281,8 @@ namespace Shop.api.Data
                 ImgUrl = "/Images/Shoes/Shoes6.png",
                 Price = 50,
                 Qty = 150,
-                CategoryId = 4
+                CategoryId = 4,
+                CategoryName = "Shoes"
             });
 
             //Add users
