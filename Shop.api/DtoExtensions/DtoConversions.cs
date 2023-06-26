@@ -18,10 +18,29 @@ namespace Shop.api.DtoExtensions
                         ImgUrl = product.ImgUrl,
                         Price = product.Price,
                         Qty = product.Qty,
-                        CategoryId = product.CategoryId
+                        CategoryId = product.CategoryId,
+                        CategoryName = product.CategoryName
                     }).ToList();
-                    
+        }
 
-    }
+        public static ProductDto ConvertToDto(this Product product, ProductCategory productCategory)
+        {
+            return new ProductDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                ImgUrl = product.ImgUrl,
+                Price = product.Price,
+                Qty = product.Qty,
+                CategoryId = product.CategoryId,
+                CategoryName = product.CategoryName
+
+            };
+        }
+
+
+
+
     }
 }

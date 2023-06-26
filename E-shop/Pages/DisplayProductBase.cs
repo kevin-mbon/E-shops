@@ -6,6 +6,6 @@ namespace Eshop.Pages
     public class DisplayProductBase : ComponentBase
 {
         [Parameter]
-        public IEnumerable<ProductDto>? Products { get; set; }
+        public IEnumerable<ProductDto> Products { get; set; }
     }
 }

@@ -21,10 +21,12 @@ namespace Eshop.Pages
                    orderby prodByCatGroup.Key
                    select prodByCatGroup;
         }
-        protected string GetCategoryName()
+
+
+        protected string GetCategoryName(IGrouping<int, ProductDto> groupedProductDtos)
         {
 
-
+            return groupedProductDtos.FirstOrDefault(pg => pg.CategoryId == groupedProductDtos.Key).CategoryName;
         }
     }
 }
