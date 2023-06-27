@@ -17,9 +17,15 @@
             <p class="mb-4">@Product.Description</p>
             <p class="mb-4">
                 <b>
-                    @Product.Price.ToString("C")&nbsp; (@Product.Qty items in stock)
+                    <b>@($"{Product.Price} €")</b>&nbsp; (@Product.Qty items in stock)
+                    @*@Product.Price.ToString("C")&nbsp;*@
                 </b>
             </p>
+            <div class="mt-5">
+                <a class="btn btn-secondary" href="#">
+                    Add to Cart
+                </a>
+            </div>
         </div>
     </div>
 }
