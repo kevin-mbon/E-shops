@@ -2,10 +2,12 @@
 @using Eshop.Pages;
 @inherits DisplayProductDetailsBase
 
+
 @if(Product == null && ErrorMessage == null ){
     <h4>Product details loading.....</h4>
 }else if(ErrorMessage != null){
-    <h3 class="text-danger">ErrorMessage uccured</h3>
+    
+    <h3 class="text-danger">@ErrorMessage</h3>
 }else{
     <h3 class="mb-5">Product details</h3>
     <div class="row">
@@ -17,8 +19,8 @@
             <p class="mb-4">@Product.Description</p>
             <p class="mb-4">
                 <b>
-                    <b>@($"{Product.Price} €")</b>&nbsp; (@Product.Qty items in stock)
-                    @*@Product.Price.ToString("C")&nbsp;*@
+                    <b>@($" ${Product.Price}")</b>&nbsp; (@Product.Qty items in stock)
+                 @*   Product.Price.ToString("C")&nbsp;*@
                 </b>
             </p>
             <div class="mt-5">
