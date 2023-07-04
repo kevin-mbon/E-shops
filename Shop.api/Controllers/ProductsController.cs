@@ -16,6 +16,13 @@ namespace Shop.api.Controllers
         {
             this.productRepository = productRepository;
         }
+        /// <summary>
+        /// Return all products in store
+        /// </summary>
+        /// <returns>return list products</returns>
+        /// <remarks>
+        /// sample request
+        /// GET/api/products</remarks>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetItems()
         {
@@ -41,6 +48,11 @@ namespace Shop.api.Controllers
             }
 
         }
+        /// <summary>
+        /// Return product with ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Return product</returns>
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ProductDto>> GetItem(int id)
         {
