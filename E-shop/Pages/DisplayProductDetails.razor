@@ -4,7 +4,8 @@
 
 
 @if(Product == null && ErrorMessage == null ){
-    <h4>Product details loading.....</h4>
+    @*<DisplaySpinner></DisplaySpinner>*@
+   @* <h4>Product details loading.....</h4>*@
 }else if(ErrorMessage != null){
     
     <h3 class="text-danger">@ErrorMessage</h3>
