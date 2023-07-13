@@ -1,1 +1,2 @@
-# E-shopsln
+# E-shop App
+Enable paypal payment getways
