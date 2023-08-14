@@ -6,6 +6,8 @@ namespace Shop.api.Data
 {
     public class EshopDbContext:DbContext
     {
+        internal readonly object eshopDbntext;
+
         public EshopDbContext(DbContextOptions<EshopDbContext> options) :base(options)
         {
 

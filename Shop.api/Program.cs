@@ -50,6 +50,7 @@ builder.Services.AddSwaggerGen(
 builder.Services.AddDbContextPool<EshopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("EshopConnection"))
     );
 builder.Services.AddScoped<IProductRepository, ProductRepository >();
+builder.Services.AddScoped<IShoppingCart, ShoppingCartRepository>();
 
 var app = builder.Build();
 
